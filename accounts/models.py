@@ -1,8 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 import uuid
-from PIL import Image
-from phonenumber_field.modelfields import PhoneNumberField
 
 # Create your models here.
 
