@@ -12,7 +12,4 @@ class LoginForm(AuthenticationForm):
         model=User
         fields="__all__"
 
-class ProfileForm(forms.ModelForm):
-    class Meta:
-        model=Profile
-        fields=('first_name','last_name','phone','address','avatar')
+
