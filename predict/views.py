@@ -1,8 +1,8 @@
 import joblib
 import pandas as pd
 from django.shortcuts import render
+ 
 
-# بارگذاری مدل و کدگذار
 model = joblib.load('predict/PredictModel/nba_winner_model.pkl')
 le_team = joblib.load('predict/PredictModel/team_encoder.pkl')
 
@@ -28,7 +28,7 @@ def predict_winner(team1_value, team2_value):
         team2 = TEAM_MAPPING.get(team2_value)
 
         if not team1 or not team2:
-            return "لطفاً تیم‌های معتبر انتخاب کنید."
+            return "Invalid teams"
 
         t1 = le_team.transform([team1])[0]
         t2 = le_team.transform([team2])[0]
@@ -38,7 +38,7 @@ def predict_winner(team1_value, team2_value):
         return team1 if prediction == 1 else team2
 
     except Exception as e:
-        return "خطا در پردازش پیش‌بینی."
+        return "Error in predict ."
 
 def predict_winner_view(request):
     winner = None
