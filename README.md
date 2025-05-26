@@ -41,6 +41,8 @@ Django
 
 HTML / CSS
 
+Javascript 
+
 Machine Learning (XGBoost Model)
 
 NBA API
@@ -49,5 +51,5 @@ NBA API
 Clone the repo:
 
 `bash
-git clone https://github.com/ArianGhaderi99/NBA-Smartweb.git
-cd NBA-Smartweb
+git clone https://github.com/amirhosssein0/NBA-WEB.git
+
