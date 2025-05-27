@@ -50,6 +50,6 @@ NBA API
 
 Clone the repo:
 
-`bash
+```bash
 git clone https://github.com/amirhosssein0/NBA-WEB.git
-
+```
